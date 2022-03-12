@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'alarm-clock';
+  src: local('alarm-clock'), url(./clockicons.woff2);
+}
+
+@font-face {
+  font-family: 'GT-Walsheim-Pro-Bold';
+  src: local('GT-Walsheim-Pro-Bold'), url(./GT-Walsheim-Pro-Bold.woff2);
+}
+
+.container {
+  font-family: 'GT-Walsheim-Pro-Bold';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a0a36;
+  color: white;
+}
+
+.timer {
+  font-family: 'alarm-clock';
+  font-size: 512px;
+  height: 512px;
+  margin: 50px 0;
+}
+
+.stopped {
+  color:#f27a82;
+}
+
+.pulse {
+  animation: pulse 1s infinite linear;
+}
+
+@keyframes pulse{
+  from {
+    color:#f27a82;
+  }
+}
+
+.startingSoon {
+  font-size: 128px;
+  height: 128px;
+  margin: 50px 0;
+}
+
+.startingSoonFadeIn {
+  animation: fadeIn 3s 1 ease-in-out;
+}
+
+@keyframes fadeIn{
+  from {
+    color:#0a0a36;
+  }
+}
